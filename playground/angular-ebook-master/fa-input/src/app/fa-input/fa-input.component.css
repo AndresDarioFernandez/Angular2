@@ -1,0 +1,16 @@
+
+
+:host {
+  border: 1px solid grey;
+}
+
+:host /deep/ input {
+  border: none;
+  outline: none;
+}
+
+:host(.focus) {
+  border: 1px solid blue;
+}
+
+
