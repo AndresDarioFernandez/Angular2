@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+
+.toggle-panel {
+    background: #d00000;
+    color: white;
+    padding: 5px 10px;
+    border:1px solid gray;
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.lesson {
+    text-align: center;
+    max-width: 330px;
+}
+
+.color-title {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.color-sample {
+    height: 50px;
+    width:50px;
+    border: 1px solid gray;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.color-sample-red {
+    background: #b13138;
+
+}
+
+.color-sample-blue {
+    background: #1976d2;
+}
+
+td{
+    border: 1px;
+    border-style: solid;
+}
+
+table td, table th {
+    padding: 5px 8px;
+}
+
+.marvel {
+    background: #b13138;
+    border: 1px solid gray;
+    color: white;
+}
+
+.marvel.hulk {
+    background: green;
+}
+
+.color-previewer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+
+}
+
+.superman {
+    background-image: url('../images/superman.png');
+}
+
+.batman {
+    background-image: url('../images/batman.jpg');
+}
+
+.flash {
+    background-image: url('../images/flash.svg');
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position-x: center;
+    background-position-y: center;
+    height: 50px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.lesson.lesson-directives-intro {
+    max-width: 400px;
+    cursor: pointer;
+}

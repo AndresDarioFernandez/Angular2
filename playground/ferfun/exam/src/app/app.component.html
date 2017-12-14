@@ -1,0 +1,58 @@
+<table>
+    <tr>
+        <td>        
+            <h2>Events</h2>
+            <div class="l-course-content card card-strong lesson">
+                <color-picker #picker [color]="color" (color)="color = $event">  
+                </color-picker>
+                <color-previewer #previewer [color]="color"></color-previewer>    
+                <button (click)="picker.reset()">Reset</button>
+            </div>  
+        </td>
+        <td>
+            <h2>Key events</h2>
+            <div>
+                <search-box (search)="onSearch($event)" text="Type Your Search Here"></search-box>
+            </div>
+        </td>
+        <td>
+            <h3>Directive ng-for</h3>
+            <heroes>
+                    <hero id="1" name="Superman"></hero>
+                    <hero id="2" [name]="'Batman'"></hero>
+                    <hero id="3" [name]="'Spiderman'" marvel="true"></hero>
+                    <hero id="3" name="Robin"></hero>
+                    <hero id="4" name="Flash"></hero>
+                    <hero id="5" name="Green Lantern"></hero>
+                </heroes>
+        </td>
+        <td>
+            <h3>Directive ng-if</h3>        
+            <toggle></toggle>
+        </td>
+        <td>
+            <h3>Directive </h3>
+            <div class="tab-container" showOneContainer>                     
+                <ul class="tab-buttons">
+                    <li showOneTrigger="superman" [active]="true">Superman</li> 
+                    <li showOneTrigger="batman">Batman</li>
+                    <li showOneTrigger="flash">Flash</li>
+                </ul>            
+                <div class="tab-panel" showOne="superman" [active]="true"> 
+                    <div class="logo superman"></div> 
+                </div>                
+                <div class="tab-panel" showOne="batman">
+                    <div class="logo batman"></div>
+                </div>                
+                <div class="tab-panel" showOne="flash">
+                    <div class="logo flash"></div>
+                </div>                
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <collapsible></collapsible>
+        </td>
+    </tr>
+</table>
