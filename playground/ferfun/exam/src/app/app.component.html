@@ -54,5 +54,16 @@
         <td>
             <collapsible></collapsible>
         </td>
+        <td>
+            <div class="l-course-content card card-strong lesson">
+                <color-sample [color]="color"></color-sample>
+                <input (keyup)="onType(input.value)" #input placeholder="Type Your Color Here">
+            </div>
+        </td>
+        <td>
+            <div class="lesson lesson-forms">
+                <form-model-driven></form-model-driven>
+            </div>
+        </td>
     </tr>
 </table>

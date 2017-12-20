@@ -1,6 +1,6 @@
 
 import {FormControl} from "@angular/forms";
-import {HTTP_PROVIDERS, Http, URLSearchParams} from "@angular/http";
+import {Http, URLSearchParams} from "@angular/http";
 import {Observable} from "rxjs/Rx";
 
 

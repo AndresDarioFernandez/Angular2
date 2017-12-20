@@ -13,6 +13,9 @@ import { ShowOneTrigger } from './show-one-container/show-one-trigger.directive'
 import { ShowOneContainer } from './show-one-container/show-one-container.directive';
 import { CollapseOnClick } from './collapsible/collapse-on-click.directive';
 import { CollapsibleComponent } from './collapsible/collapsible.component';
+import { ColorSampleComponent } from './color-sample/color-sample.component';
+import { FormModelDrivenComponent } from './form-model-driven/form-model-driven.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -27,10 +30,14 @@ import { CollapsibleComponent } from './collapsible/collapsible.component';
     ShowOneTrigger,
     ShowOne,
     CollapseOnClick,
-    CollapsibleComponent
+    CollapsibleComponent,
+    ColorSampleComponent,
+    FormModelDrivenComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

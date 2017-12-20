@@ -1,8 +1,7 @@
 
 
-import {Component} from "@angular/core";
 import {Component, Provider, forwardRef} from "@angular/core";
-import {ControlValueAccessor, NG_VALUE_ACCESSOR, CORE_DIRECTIVES} from "@angular/common";
+import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
 
 
 export const NUMBER_FIELD_CONTROL_VALUE_ACCESSOR: any = {

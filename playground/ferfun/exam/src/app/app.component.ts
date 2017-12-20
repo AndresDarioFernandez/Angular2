@@ -11,4 +11,8 @@ export class AppComponent {
   onSearch(text) {
     alert(`From App Component: ${text}`);
 }
+
+    onType(newColor) {
+        this.color = newColor;
+    }
 }
