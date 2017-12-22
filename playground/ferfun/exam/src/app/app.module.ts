@@ -16,6 +16,14 @@ import { CollapsibleComponent } from './collapsible/collapsible.component';
 import { ColorSampleComponent } from './color-sample/color-sample.component';
 import { FormModelDrivenComponent } from './form-model-driven/form-model-driven.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormSignupComponent } from './form-signup/form-signup.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SortPipe } from './pipes/sort.pipe';
+import { LessonsComponent } from './lessons/lessons.component';
+import { LessonsListComponent } from './lessons/lessons-list/lessons-list.component';
+import { LessonsService } from './lessons/lessons.service';
+import { HttpModule } from '@angular/http';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -32,14 +40,22 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     CollapseOnClick,
     CollapsibleComponent,
     ColorSampleComponent,
-    FormModelDrivenComponent
+    FormModelDrivenComponent,
+    FormSignupComponent,
+    PipesComponent,
+    SortPipe,
+    LessonsComponent,
+    LessonsListComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule 
   ],
-  providers: [],
+  exports: [LessonsListComponent],
+  providers: [LessonsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

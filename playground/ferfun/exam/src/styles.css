@@ -82,6 +82,10 @@ table td, table th {
     background-image: url('../images/flash.svg');
 }
 
+.pipe-example {
+    margin-bottom: 10px;
+}
+
 .logo {
     background-repeat: no-repeat;
     background-size: 80px;

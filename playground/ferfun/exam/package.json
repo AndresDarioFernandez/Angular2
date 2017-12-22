@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "ng": "ng", 
+    "start": "ng serve --proxy-config ./proxy.json --live-reload false",
+    "server": "./node_modules/.bin/ts-node ./server/lessons-server.ts",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
