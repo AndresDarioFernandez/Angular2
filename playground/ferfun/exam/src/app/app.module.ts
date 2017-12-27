@@ -15,7 +15,7 @@ import { CollapseOnClick } from './collapsible/collapse-on-click.directive';
 import { CollapsibleComponent } from './collapsible/collapsible.component';
 import { ColorSampleComponent } from './color-sample/color-sample.component';
 import { FormModelDrivenComponent } from './form-model-driven/form-model-driven.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FormSignupComponent } from './form-signup/form-signup.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { SortPipe } from './pipes/sort.pipe';
@@ -23,7 +23,13 @@ import { LessonsComponent } from './lessons/lessons.component';
 import { LessonsListComponent } from './lessons/lessons-list/lessons-list.component';
 import { LessonsService } from './lessons/lessons.service';
 import { HttpModule } from '@angular/http';
-import {CommonModule} from "@angular/common";
+import { CommonModule } from "@angular/common";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterComponent } from './router/router.component';
+import { routeConfig } from './router-config';
+import { SharedModule } from './shared.module';
+import { RouterModule } from '@angular/router';
+import {CoursesModule} from './courses/courses.module';
 
 @NgModule({
   declarations: [
@@ -45,14 +51,20 @@ import {CommonModule} from "@angular/common";
     PipesComponent,
     SortPipe,
     LessonsComponent,
-    LessonsListComponent
+    LessonsListComponent,
+    DashboardComponent,
+    RouterComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule 
+    HttpModule,
+    routeConfig,
+    CoursesModule,
+    SharedModule,
+    RouterModule 
   ],
   exports: [LessonsListComponent],
   providers: [LessonsService],

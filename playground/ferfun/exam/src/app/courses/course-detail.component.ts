@@ -1,8 +1,8 @@
 
 
 import {Component, OnDestroy} from "@angular/core";
-import {lessonsData} from "./lessonsData";
-import {LessonsList} from "./lessons-list.component";
+import {lessonsData} from "../lessons/lessons";
+import {LessonsListComponent} from "../lessons/lessons-list/lessons-list.component";
 import {Router, ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs/Rx";
 
@@ -29,7 +29,7 @@ export class CourseDetail implements OnDestroy {
 
     courseId: number;
 
-    lessons = lessonsData.lessons;
+    lessons = lessonsData;
     description:string;
 
     paramsSub: Subscription;

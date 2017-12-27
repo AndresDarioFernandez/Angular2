@@ -1,13 +1,13 @@
 
 
 import {NgModule} from "@angular/core";
-import {LessonsList} from "./lessons-list.component";
+import {LessonsListComponent} from "./lessons/lessons-list/lessons-list.component";
 import {CommonModule} from "@angular/common";
 
 
 @NgModule({
-    declarations: [LessonsList],
-    exports: [LessonsList],
+    declarations: [LessonsListComponent],
+    exports: [LessonsListComponent],
     imports: [CommonModule]
 
 })

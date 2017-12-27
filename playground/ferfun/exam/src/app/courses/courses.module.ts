@@ -8,8 +8,7 @@ import {CourseDetail} from "./course-detail.component";
 import {CanCourseDetailDeactivate} from "./course-detail-deactivate.guard";
 import {CanCourseDetailActivate} from "./course-detail-activate.guard";
 import {RouterModule} from "@angular/router";
-import {SharedModule} from "./shared.module";
-
+import { SharedModule } from "../shared.module";
 
 const routerConfig = [
     {
@@ -31,12 +30,15 @@ const routerConfig = [
 
 
 @NgModule({
-    imports: [CommonModule,
-        RouterModule.forChild(routerConfig), SharedModule],
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routerConfig), 
+        SharedModule
+    ],
     declarations: [Courses, CoursesList, CourseDetail],
     exports: [CoursesList],
     providers: [CanCourseDetailDeactivate, CanCourseDetailActivate]
 })
-export default class CoursesModule {
+export class CoursesModule {
 
 }

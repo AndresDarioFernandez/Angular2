@@ -5,7 +5,7 @@ import {PageViewsPieChartWidget} from "./page-views-pie-chart.component";
 import {ImpressionsByCountryWidget} from "./impresssions-by-country.component";
 
 
-export const routeConfig:Routes = [
+export const dashboardRouterConfig:Routes = [
 
     {
         path: '',
@@ -31,6 +31,5 @@ export const routeConfig:Routes = [
         component: ImpressionsByCountryWidget,
         outlet: 'section3'
     }
-
 
 ];

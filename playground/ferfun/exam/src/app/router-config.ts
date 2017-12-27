@@ -1,8 +1,8 @@
-import {AllLessons} from "./all-lessons.component";
-import {Home} from "./home.component";
+import {LessonsListComponent} from "./lessons/lessons-list/lessons-list.component";
+import {Home} from "./router/home.component";
 import {Route} from "@angular/router";
-import {coursesRouterConfig} from "./courses-router-config";
-
+import {coursesRouterConfig} from "./courses/courses-router-config";
+import {dashboardRouterConfig} from "./dashboard/dashboard-router-config";
 
 const indexRoute:Route = {
     path: "",
@@ -20,9 +20,10 @@ export const routeConfig = [
         component: Home
     },
     ...coursesRouterConfig,
+    ...dashboardRouterConfig,
     {
         path: 'lessons',
-        component: AllLessons
+        component: LessonsListComponent
     },
     fallbackRoute,
     indexRoute

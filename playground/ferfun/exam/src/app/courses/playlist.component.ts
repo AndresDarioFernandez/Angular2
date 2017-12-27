@@ -1,8 +1,8 @@
 
 
 import {Component} from "@angular/core";
-import {lessonsData} from "./lessonsData";
-import {LessonsList} from "./lessons-list.component";
+import {lessonsData} from "../lessons/lessons";
+import {LessonsListComponent} from "../lessons/lessons-list/lessons-list.component";
 import {ActivatedRoute} from "@angular/router";
 
 
@@ -21,7 +21,7 @@ export class Playlist {
 
     description:string;
 
-    lessons = lessonsData.lessons;
+    lessons = lessonsData;
 
 
     constructor(route: ActivatedRoute) {
