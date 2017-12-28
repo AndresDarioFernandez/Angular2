@@ -29,7 +29,9 @@ import { RouterComponent } from './router/router.component';
 import { routeConfig } from './router-config';
 import { SharedModule } from './shared.module';
 import { RouterModule } from '@angular/router';
-import {CoursesModule} from './courses/courses.module';
+import {Home} from "./router/home.component";
+import {DashboardModule} from "./dashboard/dashboard.module"
+import { CoursesModule } from './courses/courses.module';
 
 @NgModule({
   declarations: [
@@ -51,9 +53,9 @@ import {CoursesModule} from './courses/courses.module';
     PipesComponent,
     SortPipe,
     LessonsComponent,
-    LessonsListComponent,
     DashboardComponent,
-    RouterComponent
+    RouterComponent,
+    Home
   ],
   imports: [
     CommonModule,
@@ -61,12 +63,11 @@ import {CoursesModule} from './courses/courses.module';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    routeConfig,
     CoursesModule,
     SharedModule,
-    RouterModule 
+    RouterModule.forRoot(routeConfig),
+    DashboardModule
   ],
-  exports: [LessonsListComponent],
   providers: [LessonsService],
   bootstrap: [AppComponent]
 })

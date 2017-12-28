@@ -9,6 +9,7 @@ import {CanCourseDetailDeactivate} from "./course-detail-deactivate.guard";
 import {CanCourseDetailActivate} from "./course-detail-activate.guard";
 import {RouterModule} from "@angular/router";
 import { SharedModule } from "../shared.module";
+import {Playlist} from "./playlist.component";
 
 const routerConfig = [
     {
@@ -35,7 +36,7 @@ const routerConfig = [
         RouterModule.forChild(routerConfig), 
         SharedModule
     ],
-    declarations: [Courses, CoursesList, CourseDetail],
+    declarations: [Courses, CoursesList, CourseDetail, Playlist],
     exports: [CoursesList],
     providers: [CanCourseDetailDeactivate, CanCourseDetailActivate]
 })

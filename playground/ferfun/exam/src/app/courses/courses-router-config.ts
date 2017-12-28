@@ -1,13 +1,11 @@
 
-
-
 import {Playlist} from "./playlist.component";
 
 
 export const coursesRouterConfig = [
     {
         path: 'courses',
-        loadChildren: '/src/router-introduction/courses.module'
+        loadChildren: '/src/app/courses/courses.module'
     },
     {
         path: 'playlist',

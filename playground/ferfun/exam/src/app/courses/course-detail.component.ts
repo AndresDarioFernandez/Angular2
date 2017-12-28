@@ -26,7 +26,6 @@ import {Subscription} from "rxjs/Rx";
 })
 export class CourseDetail implements OnDestroy {
 
-
     courseId: number;
 
     lessons = lessonsData;

@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 import {Router} from "@angular/router";
 
 @Component({
-    selector: 'dashboard',
+    selector: 'dashboard-header',
     template: `
 
     <h1>Dashboard</h1>
@@ -50,7 +50,7 @@ export class DashboardHeader {
             }
             sections += "section3:section3";
         }
-        let url = '/home';
+        let url = '/dashboard';
 
         if (sections) {
             url += `(${sections})`;

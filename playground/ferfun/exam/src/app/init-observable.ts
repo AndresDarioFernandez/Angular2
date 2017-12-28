@@ -14,7 +14,7 @@ export function initObservable() {
     const combined$ = Observable.combineLatest(mouse$, click$);
 
     combined$.subscribe(
-        combined => console.log(combined[0])
+       // combined => console.log(combined[0])
     );
 
     

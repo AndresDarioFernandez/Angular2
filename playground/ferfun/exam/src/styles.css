@@ -117,3 +117,13 @@ table td, table th {
 .l-sample-app {
     text-align: center;
 }
+
+ul.top-menu > li > a.menu-active {
+    color: #ee1c1b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.playlist {
+    float: right;
+}
