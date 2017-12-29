@@ -5,6 +5,10 @@ import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {AuTabPanelModule} from "./au-tab-panel/au-tab-panel.module";
+import { AuInputModule } from 'app/au-input.module';
+import { AuModalModule } from 'app/au-modal/au-modal.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuMaskModule } from 'app/au-mask/au-mask.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +18,11 @@ import {AuTabPanelModule} from "./au-tab-panel/au-tab-panel.module";
         BrowserModule,
         FormsModule,
         HttpModule,
-        AuTabPanelModule
+        AuTabPanelModule,
+        AuInputModule,
+        AuModalModule.forRoot(),
+        BrowserAnimationsModule,
+        AuMaskModule
     ],
     providers: [],
     bootstrap: [AppComponent],
